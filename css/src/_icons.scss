@@ -39,9 +39,12 @@
 	
 		.icon-image {
 			border-radius: 50%;
-			max-width: 210px;
+			max-width: 140px;
+			max-height: 140px;
 			padding: 30px;
 			margin: 0 auto 20px;
+			border: 5px solid white;
+			box-shadow: 3px 3px 25px rgba( $grey, .7 );
 
 			img {
 
