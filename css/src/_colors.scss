@@ -1,0 +1,52 @@
+
+
+// set colors
+$teal: #2FB6E4;
+$blue: #2074B1;
+$navy: #0C3E68;
+$green: #A2CE4D;
+$lime: #8DC641;
+$orange: #F29538;
+$red: #d80000;
+$yellow: #D7DF23;
+$purple: #9A70A8;
+$grey: #9C9FA0;
+$grey-light: lighten( $grey, 25% );
+$grey-dark: darken( $grey, 25% );
+
+
+// breakpoints
+$bp-s: 600px;
+$bp-m: 768px;
+$bp-l: 1024px;
+$bp-xl: 1220px;
+
+
+// loop through the array and output background and text color classes.
+.bg-teal { background-color: $teal; color: white; }
+.bg-blue { background-color: $blue; color: white; }
+.bg-navy { background-color: $navy; color: white; }
+.bg-green { background-color: $green; color: white; }
+.bg-lime { background-color: $lime; color: white; }
+.bg-orange { background-color: $orange; color: white; }
+.bg-red { background-color: $red; color: white; }
+.bg-yellow { background-color: $yellow; color: white; }
+.bg-purple { background-color: $purple; color: white; }
+.bg-grey { background-color: $grey; color: white; }
+.bg-grey-light { background-color: $grey-light; color: white; }
+.bg-grey-dark { background-color: $grey-dark; color: white; }
+
+
+.text-teal { color: $teal; }
+.text-blue { color: $blue; }
+.text-navy { color: $navy; }
+.text-green { color: $green; }
+.text-lime { color: $lime; }
+.text-orange { color: $orange; }
+.text-red { color: $red; }
+.text-yellow { color: $yellow; }
+.text-purple { color: $purple; }
+.text-grey { color: $grey; }
+.text-grey-light { color: $grey-light; }
+.text-grey-dark { color: $grey-dark; }
+

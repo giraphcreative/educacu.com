@@ -1,0 +1,60 @@
+
+
+.icons {
+	padding: 10px 0;
+	background: url(../img/bg-icons.jpg) center center;
+	background-size: cover;
+
+	a {
+		padding: 10px 20px;
+
+		* {			
+			opacity: 1;
+			transition: 300ms all ease-in-out;			
+		}
+
+		&:hover {
+			text-decoration: none;
+			opacity: .9;
+		}
+	
+
+		@include respond-to( 450px ) {
+			padding: 40px 20px;
+			width: 50%;
+			float: left;
+
+			&:nth-child(3), &:nth-child(5), &:nth-child(7), &:nth-child(9) {
+				clear: left;
+			}
+		}
+
+		@include respond-to( 800px ) {
+			width: 25%;
+
+			&:nth-child(3), &:nth-child(7) {
+				clear: none;
+			}
+		}
+	
+		.icon-image {
+			border-radius: 50%;
+			max-width: 210px;
+			padding: 30px;
+			margin: 0 auto 20px;
+
+			img {
+
+			}
+		}
+	
+		h5 {
+			text-transform: uppercase;
+			line-height: 1.4em;
+			font-size: 2em;
+			text-align: center;
+			@include font-sketchy;
+		}
+	}
+}
+
