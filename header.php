@@ -44,7 +44,7 @@
 			<p>Access your account info 24/7 with Home Banking.  Transfer funds, check balances, setup alerts, and more. Enroll in Home Banking today!</p>
 		</div>
 		
-		<a href="/contact">
+		<a href="/story/contact/">
 			<div class="contact">
 				<img src="<?php bloginfo( 'template_url' ) ?>/img/icon-contact.png" class="contact-icon">
 				Have a question? <strong>Contact us to learn more!</strong>
