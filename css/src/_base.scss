@@ -5,7 +5,7 @@ body {
 	@include font;
 	font-size: 18px;
 	line-height: 25px;
-	color: $grey-dark;
+	color: darken( $grey-dark, 10% );
 	background: #f5f5f5;
 }
 

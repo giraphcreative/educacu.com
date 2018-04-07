@@ -35,8 +35,7 @@
 .content-wide {
 	@include clearfix;
 	@extend .content-style;
-	background: url(../img/bg-canvas.jpg) center center no-repeat;
-	background-size: cover;
+	background: white;
 	padding: 30px 20px;
 
 	@include respond-to( 1024px ) {
