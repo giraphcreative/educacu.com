@@ -25,17 +25,17 @@
 }
 
 @font-face {
-	font-family: 'Woodford Bourne Italic';
-	src:url('#{$font_path}/woodford-bourne-italic.woff2') format('woff2'),
-		url('#{$font_path}/woodford-bourne-italic.woff') format('woff');
+	font-family: 'Woodford Bourne Bold';
+	src:url('#{$font_path}/woodford-bourne-bold.woff2') format('woff2'),
+		url('#{$font_path}/woodford-bourne-bold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Woodford Bourne Bold';
-	src:url('#{$font_path}/woodford-bourne-bold-italic.woff2') format('woff2'),
-		url('#{$font_path}/woodford-bourne-bold-italic.woff') format('woff');
+	font-family: 'Woodford Bourne Italic';
+	src:url('#{$font_path}/woodford-bourne-italic.woff2') format('woff2'),
+		url('#{$font_path}/woodford-bourne-italic.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }

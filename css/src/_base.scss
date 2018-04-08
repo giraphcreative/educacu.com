@@ -49,7 +49,15 @@ p {
 }
 
 strong {
-	font-weight: bold;
+	@include font-bold;
+}
+
+em {
+	@include font-italic;
+}
+
+strong em, em strong {
+	@include font-bold-italic;
 }
 
 a {
@@ -118,7 +126,15 @@ img {
 	}
 
 	strong {
-		font-weight: bold;
+		@include font-bold;
+	}
+
+	em {
+		@include font-italic;
+	}
+
+	strong em, em strong {
+		@include font-bold-italic;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
