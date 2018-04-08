@@ -8,7 +8,7 @@
 
 
 footer {
-	background: $navy;
+	background: $teal;
 	color: white;
 	padding: 20px 0;
 	font-size: .9em;
@@ -22,7 +22,7 @@ footer {
 
 	h5 {
 		font-size: 1em;
-		color: lighten( $teal, 20% );
+		color: $navy;
 
 		@include respond-to( $bp-m ) {
 			font-size: 1.2em;
@@ -37,7 +37,7 @@ footer {
 			h5 {
 				@include font;
 				font-size: 1.1em;
-				color: white;
+				color: $navy;
 
 				@include respond-to( $bp-l ) {
 					font-size: 1.4em; 			
