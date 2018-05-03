@@ -22,7 +22,7 @@ function the_icon_showcase() {
 					?>
 			<a href="<?php print $icon['link']; ?>" class="icon">
 				<div class="icon-image bg-<?php print $color ?>"><img src="<?php print $icon['image']; ?>" alt="<?php print ( !empty( $icon['alt-text'] ) ? $icon['alt-text'] : $icon['title'] ); ?>"></div>
-				<h5 class="text-<?php print $color; ?>"><?php print $icon['title']; ?></h5>
+				<h3 class="text-<?php print $color; ?>"><?php print $icon['title']; ?></h3>
 			</a>
 					<?php 
 				} 
