@@ -57,7 +57,7 @@ header {
 
 		ul.nav-menu {
 			display: none;
-			background: $teal;
+			background: $navy;
 			position: relative;
 			z-index: 1003;
 			text-align: center;
@@ -101,7 +101,7 @@ header {
 
 				&:hover, &.open {
 					a {
-						background-color: rgba( lighten( $teal, 20% ), .2 );
+						background-color: rgba( lighten( $navy, 20% ), .2 );
 					}
 
 					ul.sub-menu {
@@ -120,7 +120,7 @@ header {
 						left: 0;
 						top: 55px;
 						width: 100%;
-						background-color: rgba( lighten( $teal, 5% ), .8 );
+						background-color: rgba( lighten( $navy, 5% ), .8 );
 						@include clearfix;
 					}
 
@@ -138,7 +138,7 @@ header {
 								padding: 15px 10px;
 
 								&:hover {
-									background: rgba( $teal, 1 );
+									background: rgba( $navy, 1 );
 								}
 							}
 
