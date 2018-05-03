@@ -20,7 +20,7 @@ footer {
 		padding: 30px 20px;
 	}
 
-	h5 {
+	h4 {
 		font-size: 1em;
 		color: $navy;
 
@@ -34,7 +34,7 @@ footer {
 		padding: 20px;
 
 		&.first {
-			h5 {
+			h4 {
 				@include font;
 				font-size: 1.1em;
 				color: $navy;

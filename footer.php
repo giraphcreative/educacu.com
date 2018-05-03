@@ -14,7 +14,7 @@
 	
 	<footer class="footer">
 		<div class="column first">
-			<h5>Educational Community Alliance CU</h5>
+			<h4>Educational Community Alliance CU</h4>
 			<p>3845 Angola Rd., Toledo, OH 43615<br>
 				Toll Free: 866.381.2323<br>
 				Routing Number: 241282603<br>
@@ -22,23 +22,23 @@
 				Visa Credit card: 800.808.7230</p>
 		</div>
 		<div class="column">
-			<h5>Loans</h5>
+			<h4>Loans</h4>
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-one', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 		<div class="column small">
-			<h5>Accounts</h5>
+			<h4>Accounts</h4>
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-two', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 		<div class="column">
-			<h5>Services</h5>
+			<h4>Services</h4>
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-three', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 		<div class="column small">
-			<h5>Resources</h5>
+			<h4>Resources</h4>
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-four', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 		<div class="column last">
-			<h5>Our Story</h5>
+			<h4>Our Story</h4>
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-five', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 	</footer><!-- #colophon -->
