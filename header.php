@@ -40,7 +40,7 @@
                 <label for="login">Login</label><input type="text" name="login" id="login" autocomplete="off">
                 <input type="image" name="submit" src="<?php bloginfo( 'template_url' ) ?>/img/icon-banking.png" title="Login to online banking." alt="Login to online banking." value="Go">
             </form>
-			<h3>HOME BANKING</h3>
+			<h2>HOME BANKING</h2>
 			<p>Access your account info 24/7 with Home Banking.  Transfer funds, check balances, setup alerts, and more. Enroll in Home Banking today!</p>
 		</div>
 		
