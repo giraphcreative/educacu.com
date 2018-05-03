@@ -8,14 +8,19 @@ header {
 		text-align: center;
 		display: block;
 
+		h1 {
+			padding: 0;
+			margin: 0;
+		}
+
 		@include respond-to( $bp-m ) {
 			float: left;
-			padding: 20px 30px;
+			padding: 15px 30px;
 			max-width: 53%;
 		}
 
 		@include respond-to( $bp-l ) {
-			padding: 30px;
+			padding: 20px 30px;
 		}
 	}
 
