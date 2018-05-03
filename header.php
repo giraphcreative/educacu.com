@@ -37,8 +37,8 @@
 		
 		<div class='banking'>
 			<form action="https://www.shareteccu.com/tpscu" method="post" _lpchecked="1">
-                <input type="text" name="login" autocomplete="off">
-                <input type="image" name="submit" src="<?php bloginfo( 'template_url' ) ?>/img/icon-banking.png" value="Go">
+                <label for="login">Login</label><input type="text" name="login" id="login" autocomplete="off">
+                <input type="image" name="submit" src="<?php bloginfo( 'template_url' ) ?>/img/icon-banking.png" title="Login to online banking." alt="Login to online banking." value="Go">
             </form>
 			<h3>HOME BANKING</h3>
 			<p>Access your account info 24/7 with Home Banking.  Transfer funds, check balances, setup alerts, and more. Enroll in Home Banking today!</p>
@@ -46,7 +46,7 @@
 		
 		<a href="/story/contact/">
 			<div class="contact">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/icon-contact.png" class="contact-icon">
+				<img src="<?php bloginfo( 'template_url' ) ?>/img/icon-contact.png" class="contact-icon" alt="Contact us for assistance with any questions you may have.">
 				Have a question? <strong>Contact us to learn more!</strong>
 			</div>
 		</a>
