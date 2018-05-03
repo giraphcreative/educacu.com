@@ -37,12 +37,12 @@ $bp-xl: 1220px;
 .bg-grey-dark { background-color: $grey-dark; color: white; }
 
 
-.text-teal { color: $teal; }
+.text-teal { color: darken( $teal, 20% ); }
 .text-blue { color: $blue; }
 .text-navy { color: $navy; }
 .text-green { color: $green; }
 .text-lime { color: $lime; }
-.text-orange { color: $orange; }
+.text-orange { color: darken( $orange, 20% ); }
 .text-red { color: $red; }
 .text-yellow { color: $yellow; }
 .text-purple { color: $purple; }
