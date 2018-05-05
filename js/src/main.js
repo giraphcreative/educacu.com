@@ -59,6 +59,7 @@ jQuery(document).ready(function($){
 			the_link_href.match( /educacu.test/i ) || 
 			the_link_href.match( /educacu.com/i ) || 
 			the_link_href.match( /educacu.giraph.io/i ) || 
+			the_link_href.match( /shareteccu.com/i ) || 
 			the_link_href.charAt(0) === '#' || 
 			the_link_href.charAt(0) === '/' ) {
 			location.href = the_link_href;
