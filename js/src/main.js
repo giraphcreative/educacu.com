@@ -56,9 +56,9 @@ jQuery(document).ready(function($){
 
 		// prompt the user and if they confirm the prompt, proceed to the third party site.
 		if ( the_link.hasClass( 'bypass' ) ||
-			the_link_href.match( /lpccu.dev/i ) || 
-			the_link_href.match( /lpccu.coop/i ) || 
-			the_link_href.match( /lp.giraph.io/i ) || 
+			the_link_href.match( /educacu.test/i ) || 
+			the_link_href.match( /educacu.com/i ) || 
+			the_link_href.match( /educacu.giraph.io/i ) || 
 			the_link_href.charAt(0) === '#' || 
 			the_link_href.charAt(0) === '/' ) {
 			location.href = the_link_href;
