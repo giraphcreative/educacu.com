@@ -18,6 +18,15 @@
 <?php wp_head(); ?>
 <link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=8" rel="stylesheet" type="text/css">
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97213155-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-97213155-1');
+</script>
+
 </head>
 <body <?php body_class(); ?>>
 
