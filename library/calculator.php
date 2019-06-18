@@ -22,35 +22,35 @@ function calculator_func( $atts ) {
     	$a['rate'] = '';
     $calculator_code = '<div class="calculator scratch one group">
 	<div class="form">
-		<div class="quarter">Amount:<br>
-			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></div>
-		<div class="quarter">Term (months):<br>
-			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></div>
-		<div class="quarter">Rate:<br>
-			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></div>
-		<div class="quarter">Monthly Payment:<br>
-			<input type="text" name="payment" class="payment" value="" /></div>
+		<div class="quarter"><label>Amount:<br>
+			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></label></div>
+		<div class="quarter"><label>Term (months):<br>
+			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></label></div>
+		<div class="quarter"><label>Rate:<br>
+			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></label></div>
+		<div class="quarter"><label>Monthly Payment:<br>
+			<input type="text" name="payment" class="payment" value="" /></label></div>
 	</div>
 </div><div class="calculator scratch two group">
 	<div class="form">
-		<div class="quarter">Amount:<br>
-			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></div>
-		<div class="quarter">Term (months):<br>
-			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></div>
-		<div class="quarter">Rate:<br>
-			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></div>
-		<div class="quarter">Monthly Payment:<br>
-			<input type="text" name="payment" class="payment" value="" /></div>
+		<div class="quarter"><label>Amount:<br>
+			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></label></div>
+		<div class="quarter"><label>Term (months):<br>
+			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></label></div>
+		<div class="quarter"><label>Rate:<br>
+			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></label></div>
+		<div class="quarter"><label>Monthly Payment:<br>
+			<input type="text" name="payment" class="payment" value="" /></label></div>
 	</div>
 </div><div class="calculator scratch three group">
 	<div class="form">
-		<div class="quarter">Amount:<br>
-			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></div>
-		<div class="quarter">Term (months):<br>
-			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></div>
-		<div class="quarter">Rate:<br>
-			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></div>
-		<div class="quarter">Monthly Payment:<br>
+		<div class="quarter"><label>Amount:<br>
+			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></label></div>
+		<div class="quarter"><label>Term (months):<br>
+			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></label></div>
+		<div class="quarter"><label>Rate:<br>
+			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></label></div>
+		<div class="quarter"><label>Monthly Payment:<br>
 			<input type="text" name="payment" class="payment" value="" /></div>
 	</div>
 </div>';
@@ -58,12 +58,12 @@ function calculator_func( $atts ) {
     $calculator_code = '<div class="calculator-compare group">
 	<div class="half form">
 		<input type="hidden" class="rate_compare" value="' . $a['rate_compare'] . '" />
-		<p>Amount:<br>
-			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></p>
-		<p>Term:<br>
-			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></p>
-		<p>Rate:<br>
-			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></p>
+		<p><label>Amount:<br>
+			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></label></p>
+		<p><label>Term:<br>
+			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></label></p>
+		<p><label>Rate:<br>
+			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></label></p>
 	</div>
 	<div class="half">
 		<p><label>Results:</label></p>
@@ -73,12 +73,12 @@ function calculator_func( $atts ) {
     } else {
     $calculator_code = '<div class="calculator-loan group">
 	<div class="half form">
-		<p>Amount:<br>
-			<input type="text" class="amount" value="' . $a['amount'] . '" /></p>
-		<p>Term:<br>
-			<input type="text" class="term" value="' . $a['term'] . '" /></p>
-		<p>Rate:<br>
-			<input type="text" class="rate" value="' . $a['rate'] . '" /></p>
+		<p><label>Amount:<br>
+			<input type="text" class="amount" value="' . $a['amount'] . '" /></label></p>
+		<p><label>Term:<br>
+			<input type="text" class="term" value="' . $a['term'] . '" /></label></p>
+		<p><label>Rate:<br>
+			<input type="text" class="rate" value="' . $a['rate'] . '" /></label></p>
 	</div>
 	<div class="half">
 		<p><label>Results:</label></p>
