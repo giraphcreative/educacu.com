@@ -65,8 +65,8 @@ jQuery(document).ready(function($){
 			the_link_href.charAt(0) === '/' ) {
 			location.href = the_link_href;
 		} else {
-			if ( confirm( "You are leaving our website and linking to an alternate website ("+the_link_href+") not operated by us. Educational Community Alliance Credit Union does not endorse or guarantee the products, information, or recommendations provided by third-party vendors or third-party linked sites." ) ) {
-				window.open( the_link_href, "_blank" );
+			if ( confirm( "You are leaving our website and linking to an alternate website  not operated by us ("+the_link_href+"). Educational Community Alliance Credit Union does not endorse or guarantee the products, information, or recommendations provided by third-party vendors or third-party linked sites." ) ) {
+				window.open( the_link_href, "_blank" ); 
 			}
 		}
 
