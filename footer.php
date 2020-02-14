@@ -19,7 +19,7 @@
 				Toll Free: 866.381.2323<br>
 				Routing Number: 241282603<br>
 				Debit/ATM card: 800.264.5578 / 1.866.842.5208<br>
-				Visa Credit card: 800.808.7230</p>
+				Visa Credit card: 800.558.3424</p>
 		</div>
 		<div class="column">
 			<h4>Loans</h4>
