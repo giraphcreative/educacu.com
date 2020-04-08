@@ -30,72 +30,72 @@
 	}
 
 	&.red {
-		background: lighten( $red, 40% );
-		color: $red;
-		border-bottom: 1px solid $red;
+		background: $red;
+		color: white;
+		border-bottom: 1px solid darken( $red, 10% );
 
 		a {
-			color: $red;
+			color: white;
 		}
 	}
 
 	&.orange {
-		background: lighten( $orange, 40% );
-		color: $orange;
-		border-bottom: 1px solid $orange;
+		background: $orange;
+		color: white;
+		border-bottom: 1px solid darken( $orange, 10% );
 
 		a {
-			color: $orange;
+			color: white;
 		}
 	}
 
 	&.yellow {
-		background: lighten( $yellow, 40% );
-		color: $yellow;
-		border-bottom: 1px solid $yellow;
+		background: $yellow;
+		color: darken( $yellow, 50% );
+		border-bottom: 1px solid darken( $yellow, 10% );
 
 		a {
-			color: $yellow;
+			color: darken( $yellow, 50% );
 		}
 	}
 
 	&.lime {
-		background: lighten( $lime, 40% );
-		color: $lime;
-		border-bottom: 1px solid $lime;
+		background: $lime;
+		color: darken( $lime, 40% );
+		border-bottom: 1px solid darken( $lime, 10% );
 
 		a {
-			color: $lime;
+			color: darken( $lime, 40% );
 		}
 	}
 
 	&.navy {
-		background: lighten( $navy, 40% );
-		color: $navy;
-		border-bottom: 1px solid $navy;
+		background: $navy;
+		color: white;
+		border-bottom: 1px solid darken( $navy, 10% );
 
 		a {
-			color: $navy;
+			color: white;
 		}
 	}
 
 	&.blue {
-		background: lighten( $blue, 40% );
-		color: $blue;
-		border-bottom: 1px solid $blue;
+		background: $blue;
+		color: white;
+		border-bottom: 1px solid darken( $blue, 10% );
 
 		a {
-			color: $blue;
+			color: white;
 		}
 	}
 
 	&.teal {
-		background: lighten( $teal, 40% );
-		color: $teal;
-		border-bottom: 1px solid $teal;
+		background: $teal;
+		color: $navy;
+		border-bottom: 1px solid darken( $teal, 10% );
 
 		a {
-			color: $teal;
+			color: $navy;
 		}
 	}
 }
