@@ -46,7 +46,7 @@ gtag('config', 'UA-97213155-1');
 		
 		<div class='banking'>
 			<form action="https://www.shareteccu.com/tpscu" method="post" _lpchecked="1">
-                <label for="login">Login</label><input type="text" name="login" id="login" autocomplete="off">
+                <label for="login">Login ID</label><input type="text" name="login" id="login" autocomplete="off" placeholder="Login ID">
                 <input type="image" name="submit" src="<?php bloginfo( 'template_url' ) ?>/img/icon-banking.png" title="Login to online banking." alt="Login to online banking." value="Go">
             </form>
 			<h2>HOME BANKING</h2>
