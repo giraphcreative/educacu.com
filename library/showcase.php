@@ -50,8 +50,8 @@ function the_showcase() {
 		if ( $count > 1 ) { 
 			?>
 			<div class="showcase-nav">
-				<a class="previous" role="button">Previous</a>
-				<a class="next" role="button">Next</a>
+				<a class="previous" role="button" tabindex="0">Previous</a>
+				<a class="next" role="button" tabindex="0">Next</a>
 			</div>
 			<?php
 		}

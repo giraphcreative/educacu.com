@@ -135,6 +135,23 @@ jQuery(document).ready(function($){
 				}
 			});
 
+			// next/previous click
+			showcase.find( '.showcase-nav a' ).keypress(function( e ){
+				e.preventDefault();
+				if ( e.keyCode == 32 ) {
+					if ( $(this).hasClass( 'previous' ) ) {
+						prev_slide();
+					} else {
+						next_slide();
+					}
+				}
+
+				// stop auto-rotation
+				if ( slide_count > 1 ) {
+					clearInterval( auto_rotate );
+				}
+			});
+
 			// move slides to left if they mouse over the previous nav
 			// gives the illusion of infinite scrolling
 			showcase.find( '.showcase-nav a.previous' ).hover(function(){
