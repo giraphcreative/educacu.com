@@ -1,4 +1,6 @@
 
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
 
     // load all grunt tasks
@@ -44,16 +46,25 @@ module.exports = function(grunt) {
 
         // we use the Sass
         sass: {
+            options: {
+                implementation: sass,
+                sourceMap: true,
+                outputStyle: 'compressed'
+            },
             dist: {
-                options: {
-                    // nested, compact, compressed, expanded
-                    style: 'compressed'
-                },
                 files: {
                     'css/src/main-unprefixed.css': 'css/src/main.scss',
                     'editor-style.css': 'css/src/editor.scss',
                 }
-            }
+            },
+            sourceMapSimple: {
+                options: {
+                    sourceMap: true
+                },
+                files: {
+                    'css/main.map.css': 'css/src/main.scss'
+                }
+            },        
         },
 
 
