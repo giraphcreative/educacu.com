@@ -16,7 +16,7 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=11" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=12" rel="stylesheet" type="text/css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97213155-1"></script>
 <script>
