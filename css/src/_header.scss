@@ -164,21 +164,7 @@ header {
 	        margin: 20px 20px 0 0;
 		}
 
-		input[type=text] {
-			position: absolute;
-			top: -5px;
-			right: 20px;
-			width: 50%;
-			padding: 3px 10px;
-			border: 2px solid $grey-dark;
-			color: $grey-dark;
-
-			&:focus {
-				outline: 2px solid $purple;
-			}
-		}
-
-		input[type=image] {
+		.banking-button {
 			position: absolute;
 			right: 10px;
 			top: -15px;

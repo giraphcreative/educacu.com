@@ -16,7 +16,7 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=13" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=14" rel="stylesheet" type="text/css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97213155-1"></script>
 <script>
@@ -45,10 +45,7 @@ gtag('config', 'UA-97213155-1');
 		</div>
 		
 		<div class='banking'>
-			<form action="https://www.shareteccu.com/tpscu" method="post" _lpchecked="1">
-                <label for="login">Login ID</label><input type="text" name="login" id="login" autocomplete="off" placeholder="Login ID">
-                <input type="image" name="submit" src="<?php bloginfo( 'template_url' ) ?>/img/icon-banking.png" title="Login to online banking." alt="Login to online banking." value="Go">
-            </form>
+			<a href="https://gbs.onlinecu.com/tpscu/#/"><img src="<?php bloginfo( 'template_url' ) ?>/img/icon-banking.png" title="Login to online banking." alt="Login to online banking." class="banking-button"></a>
 			<h2>HOME BANKING</h2>
 			<p>Access your account info 24/7 with Home Banking.  Transfer funds, check balances, setup alerts, and more. Enroll in Home Banking today!</p>
 		</div>
