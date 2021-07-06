@@ -44,11 +44,14 @@ gtag('config', 'UA-97213155-1');
 			</a>
 		</div>
 		
-		<a href="https://gbs.onlinecu.com/tpscu/#/"><div class='banking'>
-			<img src="<?php bloginfo( 'template_url' ) ?>/img/icon-banking.png" title="Login to online banking." alt="Login to online banking." class="banking-button">
+		<div class='banking'>
+			<form class="online-banking-form">
+                <label for="login">User ID</label><input type="text" name="userid" class="userid" autocomplete="off" placeholder="User ID">
+                <input type="image" name="submit" src="<?php bloginfo( 'template_url' ) ?>/img/icon-banking.png" title="Login to online banking." alt="Login to online banking." value="Go">
+            </form>
 			<h2>HOME BANKING</h2>
 			<p>Access your account info 24/7 with Home Banking.  Transfer funds, check balances, setup alerts, and more. Enroll in Home Banking today!</p>
-		</div></a>
+		</div>
 		
 		<a href="/story/contact/">
 			<div class="contact">
