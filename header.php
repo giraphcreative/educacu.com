@@ -44,11 +44,11 @@ gtag('config', 'UA-97213155-1');
 			</a>
 		</div>
 		
-		<div class='banking'>
-			<a href="https://gbs.onlinecu.com/tpscu/#/"><img src="<?php bloginfo( 'template_url' ) ?>/img/icon-banking.png" title="Login to online banking." alt="Login to online banking." class="banking-button"></a>
+		<a href="https://gbs.onlinecu.com/tpscu/#/"><div class='banking'>
+			<img src="<?php bloginfo( 'template_url' ) ?>/img/icon-banking.png" title="Login to online banking." alt="Login to online banking." class="banking-button">
 			<h2>HOME BANKING</h2>
 			<p>Access your account info 24/7 with Home Banking.  Transfer funds, check balances, setup alerts, and more. Enroll in Home Banking today!</p>
-		</div>
+		</div></a>
 		
 		<a href="/story/contact/">
 			<div class="contact">
