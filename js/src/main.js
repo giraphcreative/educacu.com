@@ -74,6 +74,8 @@ jQuery(document).ready(function($){
 	});
 
 	$( '.lightbox-iframe' ).magnificPopup({ 'type': 'iframe' });
+
+	$( '.home-content' ).fitVids();
 	
 });
 

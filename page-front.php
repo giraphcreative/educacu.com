@@ -1,11 +1,23 @@
 <?php
 
+/*
+Template Name: Homepage
+ */
+
 get_header();
 
 the_showcase(); 
 
 the_icon_showcase(); 
-	
+
+the_boxes();
+
+the_footer_image(); 
+
+?>
+<div class="home-content">
+	<img src="<?php bloginfo( 'template_url' ) ?>/img/title-home-video.jpg" class="home-title" />
+<?php
 if ( have_posts() ) :
 	while ( have_posts() ) : the_post(); 
 		if( '' !== get_post()->post_content ) { ?>
@@ -18,10 +30,10 @@ if ( have_posts() ) :
 		}
 	endwhile;
 endif;
-
-the_boxes();
-
-the_footer_image(); 
+?>
+	<img src="<?php bloginfo( 'template_url' ) ?>/img/pencil.png" class="home-pencil" />
+</div>
+<?php
 
 get_footer();
 

@@ -76,3 +76,38 @@ table {
 		}
 	}
 }
+
+
+.home-content {
+	position: relative;
+
+	.home-title {
+		margin-top: 10px;
+	}
+
+	.home-pencil {
+		position: absolute;
+		bottom: -20px;
+		width: 300px;
+		left: 50%;
+		margin-left: -150px;
+
+		@include respond-to( 768px ) {
+			width: 600px;
+			margin-left: -300px;
+			bottom: -30px;
+		}
+	}
+
+	.content-wide {
+		@include respond-to( 840px ) {
+			display: flex;
+			padding: 30px 20px 60px;
+
+			p {
+				flex: 1;
+				padding: 0 10px;
+			}
+		}
+	}
+}
