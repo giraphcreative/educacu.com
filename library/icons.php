@@ -14,7 +14,7 @@ function the_icon_showcase() {
 
 		// if it's an array, we'll assume it's got content
 		?>
-		<div class="icons group">
+		<div class="icons">
 			<?php
 			foreach ( $icons as $icon ) {
 				$color = ( !empty( $icon['color'] ) ? $icon['color'] : 'blue' );
