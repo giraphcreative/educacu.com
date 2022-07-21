@@ -31,6 +31,10 @@ gtag('config', 'UA-97213155-1');
 <script>!function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');saq('ts', '-uBJHlL_WJGTGs9bmKqDxQ');</script>
 <?php } ?>
 
+<?php if ( stristr( $_SERVER['REQUEST_URI'], '/flashsalethanks' ) ) { ?>
+<script>!function(s,a,e,v,n,t,z){if(s.saq)return;n=s.saq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!s._saq)s._saq=n;n.push=n;n.loaded=!0;n.version='1.0';n.queue=[];t=a.createElement(e);t.async=!0;t.src=v;z=a.getElementsByTagName(e)[0];z.parentNode.insertBefore(t,z)}(window,document,'script','https://tags.srv.stackadapt.com/events.js');saq('conv','rqcF9KEMkNzudeaaESmQan');</script><noscript><img src="https://tags.srv.stackadapt.com/conv?cid=rqcF9KEMkNzudeaaESmQan" width="1" height="1"/></noscript>
+<?php } ?>
+
 </head>
 <body <?php body_class(); ?>>
 
