@@ -16,7 +16,7 @@ the_footer_image();
 
 ?>
 <div class="home-content">
-	<img src="<?php bloginfo( 'template_url' ) ?>/img/title-home-video.jpg" class="home-title" />
+	<img src="<?php bloginfo( 'template_url' ) ?>/img/title-home-video.jpg" alt="Live and Continue to Learn" class="home-title" />
 <?php
 if ( have_posts() ) :
 	while ( have_posts() ) : the_post(); 
@@ -31,7 +31,7 @@ if ( have_posts() ) :
 	endwhile;
 endif;
 ?>
-	<img src="<?php bloginfo( 'template_url' ) ?>/img/pencil.png" class="home-pencil" />
+	<img src="<?php bloginfo( 'template_url' ) ?>/img/pencil.png" role="presentation" class="home-pencil" />
 </div>
 <?php
 
