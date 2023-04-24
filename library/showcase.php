@@ -1,6 +1,39 @@
 <?php
 
 
+function is_slide_live( $start, $stop ) {
+
+	//if ( !empty( $start ) ) $start = intval( $start ) + ( get_option('gmt_offset') * 3600 );
+	//if ( !empty( $stop ) ) $stop = intval( $stop ) + ( get_option('gmt_offset') * 3600 );
+
+	// get the current time	
+	$current_time = date( 'U' ) + ( get_option('gmt_offset') * 3600 );
+
+	// if no start or stop was specified, the slide shows
+	if ( empty( $start ) && empty( $stop ) ) {
+		return true;
+	}
+
+	// if we have a start time and no end time, and we're past the start time
+	if ( !empty( $start ) && $current_time >= $start && empty( $stop ) ) {
+		return true;
+	}
+
+	// if we have no start and do have a stop, show if before stop time
+	if ( empty( $start) && !empty( $stop ) && $current_time <= $stop ) {
+		return true;
+	}
+
+	// if we have both start and stop, make sure the current time is between them
+	if ( !empty( $start ) && !empty( $stop ) && $current_time >= $start && $current_time <= $stop ) {
+		return true;
+	}
+
+	// otherwise we're not showing the slide
+	return false;
+}
+
+
 function the_showcase() {
 
 	// get the slides
@@ -19,6 +52,9 @@ function the_showcase() {
 				$subtitle = ( isset( $slide["subtitle"] ) ? $slide["subtitle"] : '' );
 				$link = ( isset( $slide["link"] ) ? $slide["link"] : '' );
 				$alt = ( isset( $slide['alt-text'] ) ? $slide["alt-text"] : "Link to " . $link );
+				$start = ( isset( $slide['schedule-start'] ) ? $slide["schedule-start"] : "" );
+				$stop  = ( isset( $slide['schedule-stop'] ) ? $slide["schedule-stop"] : "" );
+
 
 				// check if it's an image or video
 				if ( p_is_image( $slide["image"] ) ) {
@@ -29,8 +65,10 @@ function the_showcase() {
 					$image = apply_filter( 'the_content', $slide["image"] );
 				}
 
+				// if the slide is scheduled to be live
+				if ( is_slide_live( $start, $stop ) ) {
 				?>
-			<div class="slide<?php print ( $key == 0 ? ' visible' : '' ); ?>">
+			<div class="slide<?php print ( $count == 0 ? ' visible' : '' ); ?>">
 				<?php if ( !empty( $link ) ) { ?><a href="<?php print $link ?>" class="<?php print ( stristr( $link, 'vimeo' ) || stristr( $link, 'youtube' ) || stristr( $link, 'google.com/maps' ) ? 'lightbox-iframe' : '' ) ?>"><?php } ?>
 				<?php print $image; ?>
 				<?php if ( !empty( $link ) ) { ?></a><?php } ?>
@@ -44,6 +82,7 @@ function the_showcase() {
 			</div>
 				<?php
 				$count++;
+				}
 			}
 		}
 

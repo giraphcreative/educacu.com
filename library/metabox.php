@@ -50,6 +50,20 @@ function page_metaboxes( $meta_boxes ) {
         'type' => 'text',
     ) );
 
+    $showcase_metabox->add_group_field( $showcase_metabox_group, array(
+        'name' => 'Scheduled Start',
+        'desc' => 'When to start showing this slide (empty for immediately).',
+        'id'   => 'schedule-start',
+        'type' => 'text_datetime_timestamp',
+    ) );
+
+    $showcase_metabox->add_group_field( $showcase_metabox_group, array(
+        'name' => 'Scheduled Stop',
+        'desc' => 'When to stop showing this slide (empty for never).',
+        'id'   => 'schedule-stop',
+        'type' => 'text_datetime_timestamp',
+    ) );
+
 
 
     // thumb showcase metabox
