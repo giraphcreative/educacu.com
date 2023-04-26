@@ -31,7 +31,7 @@ if ( have_posts() ) :
 	endwhile;
 endif;
 ?>
-	<img src="<?php bloginfo( 'template_url' ) ?>/img/pencil.png" alt="" class="home-pencil" />
+	<img src="<?php bloginfo( 'template_url' ) ?>/img/pencil.png" role="presentation" alt="" class="home-pencil" />
 </div>
 <?php
 
