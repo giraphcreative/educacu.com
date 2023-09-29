@@ -16,7 +16,7 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=16" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=17" rel="stylesheet" type="text/css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97213155-1"></script>
 <script>
@@ -56,14 +56,35 @@ gtag('config', 'UA-97213155-1');
 			</a>
 		</div>
 		
-		<div class='banking'>
-			<form class="online-banking-form">
-                <label for="login">User ID</label><input type="text" name="userid" class="userid" autocomplete="off" placeholder="User ID">
-                <input type="image" name="submit" src="<?php bloginfo( 'template_url' ) ?>/img/icon-banking.png" title="Login to online banking." alt="Login to online banking." value="Go">
-            </form>
-			<h2>HOME BANKING</h2>
-			<p>Access your account info 24/7 with Home Banking.  Transfer funds, check balances, setup alerts, and more. Enroll in Home Banking today!</p>
-		</div>
+		<?php
+		$time = time();
+		if ( $time < 1696014000 ) {
+			// current
+			?>
+			<a href="https://gbs.onlinecu.com/tpscu/#/" class="banking-link" target="_blank"><div class='banking'>
+				<h2>HOME BANKING</h2>
+				<p>Click here to access your account info 24/7 with Home Banking.  Transfer funds, check balances, setup alerts, and more. Enroll in Home Banking today!</p>
+			</div></a>
+			<?php
+		} else if ( $time >= 1696251600 ) {
+			// monday
+			?>
+			<a href="https://www.itsme247.com/363/authentication/username" class="banking-link" target="_blank"><div class='banking'>
+				<h2>HOME BANKING</h2>
+				<p>Click here to access your account info 24/7 with Home Banking.  Transfer funds, check balances, setup alerts, and more. Enroll in Home Banking today!</p>
+			</div></a>
+			<?php
+		} else {
+			// maintenance
+			?>
+			<div class='banking maintenance'>
+				<h2>HOME BANKING MAINTENANCE</h2>
+				<p>Online banking is currently undergoing maintenance until Monday at 9am. Sorry for the inconvenience.</p>
+			</div>
+			<?php
+		}
+		?>
+
 		
 		<a href="/story/contact/">
 			<div class="contact">
