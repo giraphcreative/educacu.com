@@ -272,6 +272,19 @@ function page_metaboxes( $meta_boxes ) {
         )
     ) );
 
+    $emergency_metabox->add_field( array(
+        'name' => 'Scheduled Start',
+        'desc' => 'When to start showing this emergemcy banner.',
+        'id'   => 'schedule-start',
+        'type' => 'text_datetime_timestamp',
+    ) );
+
+    $emergency_metabox->add_field( array(
+        'name' => 'Scheduled Stop',
+        'desc' => 'When to stop showing this emergency banner.',
+        'id'   => 'schedule-stop',
+        'type' => 'text_datetime_timestamp',
+    ) );
 
 }
 add_filter( 'cmb2_init', 'page_metaboxes' );
