@@ -9,16 +9,20 @@ get_header();
 
 	<div class="content-wide" role="main">
 
+		<div class="articles">
 		<?php 
 		if ( have_posts() ) : 
 
 			// Start the Loop.
 			while ( have_posts() ) : the_post(); 
 				?>
-				<hr />
-				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<?php the_excerpt(); ?>
-				<p class="quiet">Posted by <?php print get_the_author_link() ?> in <?php print get_the_category_list( ', ' ) ?>.</p>
+		<div class="entry third">
+			<a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) { ?><div class="post-thumbnail-container"><?php the_post_thumbnail(); ?></div><?php } ?>
+			<h4><?php print get_the_title(); ?></h4></a>
+			<?php the_excerpt(); ?>
+		</div>
+		<?php 
+		?>
 				<?php
 			endwhile;
 
@@ -28,7 +32,7 @@ get_header();
 
 		endif;
 		?>
-
+		</div>
 	</div><!-- #primary -->
 
 	<?php pagination(); ?>

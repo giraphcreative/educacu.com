@@ -45,6 +45,14 @@
 		@include font-thin;
 	}
 
+	.single-post & {
+		padding-top: 50px;
+
+		@include respond-to( 1024px ) {
+			padding-top: 100px;
+		}
+	}
+
 	&.odd {
 		background: rgba( $grey, .4 );
 	}
@@ -54,7 +62,7 @@
 		color: $purple;
 		background: url(../img/title-border.png) bottom center no-repeat;
 		background-size: contain;
-		padding: 25px 0;
+		padding: 35px 0 25pxx;
 		
 		margin-bottom: 10px;
 		@include respond-to( $bp-s ) { margin-bottom: 20px; }

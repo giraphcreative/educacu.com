@@ -15,15 +15,21 @@ get_header(); ?>
 			?><h1 class="post-title">Our Blog</h1><?php
 		}
 		
-
+		?>
+		<div class="articles">
+		<?php 
 		if ( have_posts() ) : 
 
 			// Start the Loop.
 			while ( have_posts() ) : the_post(); 
 				?>
-				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<?php the_excerpt(); ?>
-				<hr />
+		<div class="entry third">
+			<a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) { ?><div class="post-thumbnail-container"><?php the_post_thumbnail(); ?></div><?php } ?>
+			<h4><?php print get_the_title(); ?></h4></a>
+			<?php the_excerpt(); ?>
+		</div>
+		<?php 
+		?>
 				<?php
 			endwhile;
 
@@ -33,6 +39,7 @@ get_header(); ?>
 
 		endif;
 		?>
+		</div>
 		
 		<?php pagination(); ?>
 

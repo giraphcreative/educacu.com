@@ -1,0 +1,27 @@
+
+
+.quick-links {
+    @include respond-to( $bp-s ) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px -2%;
+    }
+
+    .link {
+        @include respond-to( $bp-s ) {
+            flex: 0 1 46%;
+            margin: 2%;
+        }
+
+        @include respond-to( $bp-m ) {
+            flex: 0 1 29.3333%;
+            margin: 2%;
+        }
+
+        @include respond-to( $bp-m ) {
+            flex: 0 1 21%;
+            margin: 2%;
+        }
+    }
+}
+

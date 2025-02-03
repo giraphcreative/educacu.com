@@ -7,7 +7,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' ); 
 	
 	// set the default thumbnail size
-	set_post_thumbnail_size( 500, 500, true );
+	set_post_thumbnail_size( 700, 480, true );
 
 }
 
@@ -123,4 +123,29 @@ function p_is_image( $img_path ) {
 }
 
 
-?>
+add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
+
+function remove_width_attribute( $html ) {
+   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+   return $html;
+}
+
+
+// remove sizes=auto from images.
+add_filter(
+    'wp_content_img_tag',
+    static function ( $image ) {
+            return str_replace( ' sizes="auto, ', ' sizes="', $image );
+    }
+);
+add_filter(
+    'wp_get_attachment_image_attributes',
+    static function ( $attr ) {
+            if ( isset( $attr['sizes'] ) ) {
+                    $attr['sizes'] = preg_replace( '/^auto, /', '', $attr['sizes'] );
+            }
+            return $attr;
+    }
+);
+
