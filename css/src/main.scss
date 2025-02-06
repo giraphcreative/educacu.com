@@ -1,9 +1,9 @@
 
-
 // font path
 $font_path: "fonts/";
-
 
 // import all the things
 @import "mixins", "colors", "fonts", "reset", "base", "icons", "grid", "header", "articles", "quick-links", "showcase", "content", "calculator", "sidebar", "footer", "icons", "magnific", "emergency", "gravity";
 
+// include component styles
+@import "component/boxes", "component/videos";

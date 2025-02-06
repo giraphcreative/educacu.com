@@ -2,6 +2,14 @@
 
 get_header();
 
+if ( have_components() ) {
+	?>
+	<div class="content-wide" role="main">
+	<?php the_components(); ?>
+	</div>
+	<?php
+}
+
 the_showcase(); 
 
 the_icon_showcase(); 

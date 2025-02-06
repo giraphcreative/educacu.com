@@ -28,6 +28,10 @@ include( "library/boxes.php" );
 include( "library/footer.php" );
 
 
+// include components
+include( "library/components.php" );
+
+
 // add editor stylesheet
 add_editor_style( 'editor-style.css' );
 

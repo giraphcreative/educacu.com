@@ -1,0 +1,144 @@
+
+.boxes-container {
+	overflow-x: hidden;
+
+	.boxes {
+		@include respond-to( $bp-m ) {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 30px 0;
+			margin-right: -5%;
+		}
+
+		.box {
+			position: relative;
+			box-shadow: 5px 5px 30px rgba( black, .1 );
+			background: white;
+			border: 3px solid $grey;
+			margin-top: 20px;
+
+			@include respond-to( $bp-m ) {
+				margin-top: 0;
+			}
+
+			.box-title {
+				padding: 10px 30px;
+				background: $grey;
+
+				h3 {
+					color: white;
+					font-size: 1.2em;
+					@include font;
+				}
+			}
+			
+			.box-content {
+				padding: 20px 30px;
+			}
+
+			@include respond-to( $bp-m ) {
+				flex: 1;
+				flex-basis: 45%;
+				margin-right: 5%;
+				margin-bottom: 5%;
+				flex-grow: 0;
+			}
+
+			&.linked {
+				cursor: pointer;
+			}
+
+			&.teal {
+				border-color: $teal;
+				background-color: rgba( $teal, .1 );
+
+				.box-title {
+					background: $teal;
+					h3 { color: white; }
+				}
+			}
+
+			&.blue {
+				border-color: $blue;
+				background-color: rgba( $blue, .1 );
+
+				.box-title {
+					background: $blue;
+					h3 { color: white; }
+				}
+			}
+
+			&.navy {
+				border-color: $navy;
+				background-color: rgba( $navy, .1 );
+
+				.box-title {
+					background: $navy;
+					h3 { color: white; }
+				}
+			}
+
+			&.lime {
+				border-color: $lime;
+				background-color: rgba( $lime, .1 );
+
+				.box-title {
+					background: $lime;
+					h3 { color: white; }
+				}
+			}
+
+			&.purple {
+				border-color: $purple;
+				background-color: rgba( $purple, .1 );
+
+				.box-title {
+					background: $purple;
+					h3 { color: white; }
+				}
+			}
+
+			&.orange {
+				border-color: $orange;
+				background-color: rgba( $orange, .1 );
+
+				.box-title {
+					background: $orange;
+					h3 { color: white; }
+				}
+			}
+
+			&.red {
+				border-color: $red;
+				background-color: rgba( $red, .1 );
+
+				.box-title {
+					background: $red;
+					h3 { color: white; }
+				}
+			}
+
+			&.yellow {
+				border-color: $yellow;
+				background-color: rgba( $yellow, .1 );
+
+				.box-title {
+					background: $yellow;
+					h3 { color: black; }
+				}
+			}
+
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -20px;
+				content: ' ';
+				background: url(../img/box-karat.png) center center no-repeat;
+				width: 40px;
+				height: 20px;
+			}
+		}
+
+	}
+}

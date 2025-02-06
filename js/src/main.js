@@ -13,6 +13,8 @@ jQuery(document).ready(function($){
 	// remove height and width from images inside
 	fluid_images.removeAttr( 'width' ).removeAttr( 'height' );
 
+	// auto-resize videos
+	$(".content-wide").fitVids();
 
 	// show/hide menus when they click the toggler
 	menu_toggle.click(function(){
