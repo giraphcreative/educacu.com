@@ -52,7 +52,7 @@ the_footer_image();
 		</div>
 	</div>
 	<?php endif; ?>
-	<img src="<?php bloginfo( 'template_url' ) ?>/img/pencil.png" role="presentation" alt="" class="home-pencil" />
+	<img src="<?php bloginfo( 'template_url' ) ?>/img/pencil.png" role="presentation" alt="Pencil image." class="home-pencil" />
 </div>
 <?php
 

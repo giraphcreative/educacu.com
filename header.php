@@ -16,7 +16,7 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=23" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=24" rel="stylesheet" type="text/css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97213155-1"></script>
 <script>
@@ -94,7 +94,7 @@ gtag('config', 'UA-97213155-1');
 		</a>
 	</div>
 
-	<nav role="navigation">
+	<nav>
 		<button class="menu-toggle"><i class="fa fa-bars">Show/hide Menu</i></button>
 		<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
 	</nav>
